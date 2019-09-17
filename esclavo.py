@@ -1,58 +1,80 @@
 import socket
+import struct
 from tkinter import *
 import tkinter
 import threading
 import time
 import random
 import datetime
+from threading import Thread
 from time import strftime
 
+root = Tk()  # Se crea raiz para ventana principal
+multicastGroup = ('224.1.1.1', 5007)
 
-class relojHilo(threading.Thread):
-    hora = datetime.datetime.now()
-    tiempo = 1000
-    uno = 1
+hora = datetime.datetime.now()
+tiempo = 1000
+uno = 1
+myClock1 = tkinter.Label(root)
 
-    def run(self):
-        root = tkinter.Tk()
-        root.title(threading.currentThread().getName())
-        myClock1 = tkinter.Label(root)
-        today = datetime.datetime.now()
-        hora = today
-        myClock1['text'] = today
-        myClock1['font'] = 'Tahoma 50 bold'
-        myClock1.grid(row=0, column=0, columnspan=3)
-        # myClock1.pack()
+def createSocket(timeOut):
+	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+	sock.settimeout(timeOut)
+	ttl = struct.pack('b', 1)
+	sock.setsockopt(socket.IPPROTO_IP, socket.IP_MULTICAST_TTL, ttl)
+	return sock
 
-        def tic():
-            self.hora = self.hora+datetime.timedelta(seconds=self.uno)
-            myClock1['text'] = self.hora.strftime('%H:%M:%S')
+def tic():
+    global hora
+    hora = hora+datetime.timedelta(seconds=uno)
+    myClock1['text'] = hora.strftime('%H:%M:%S')
 
-        def tac():
-            tic()
-            myClock1.after(int(self.tiempo), tac)
-        tac()
-        root.mainloop()
 
-class Comunicador(threading.Thread):
+def tac():
+    tic()
+    myClock1.after(int(tiempo), tac)
+
+
+def listeningSocket():
+    global hora
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    if True:
+        sock.bind(('', multicastGroup[1]))
+    else:
+        sock.bind(multicastGroup)
+    mreq = struct.pack("4sl", socket.inet_aton(
+        multicastGroup[0]), socket.INADDR_ANY)
+
+    sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
+
+    while True:
+        data, address = sock.recvfrom(5007)
+        if data in b'Hello UDP Server':
+            pass
+        else:
+            commandMessage = data.decode()
+            print(commandMessage)
+            hora = datetime.datetime.strptime(commandMessage, '%H:%M:%S')
+        
+
+
+if __name__ == "__main__":
+    Thread(target=listeningSocket).start()
+    root.title("principal")
+    today = hora + datetime.timedelta(seconds=random.randint(1, 1000000))
+    hora = today
+    myClock1['text'] = today
+
+    myClock1['font'] = 'Tahoma 50 bold'
+    myClock1.grid(row=0, column=0, columnspan=3)
     msgFromClient = "Hello UDP Server"
     bytesToSend = str.encode(msgFromClient)
-    serverAddressPort = ("127.0.0.1", 20002)
-    bufferSize = 1024
-    # Create a UDP socket at client side
-    UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    def run(self):
-        r1 = relojHilo(name="principal")
-        r1.start()
-        # Send to server using created UDP socket
-        self.UDPClientSocket.sendto(self.bytesToSend, self.serverAddressPort)
-        
-        while (True):
-            msgFromServer = self.UDPClientSocket.recvfrom(self.bufferSize)
-            msg = "mensaje del servidor: "+str(msgFromServer[0], encoding)
-            print(msg)
-            r1.hora = datetime.datetime.strptime(str(msgFromServer[0], encoding), '%H:%M:%S')
-
-encoding = 'utf-8'
-c1=Comunicador(name="hilo1")
-c1.start()
+    sock = createSocket(4)
+    sock.sendto(bytesToSend, multicastGroup)
+    data, address = sock.recvfrom(5007)
+    print(data.decode())
+    hora = datetime.datetime.strptime(data.decode(), '%H:%M:%S')
+    
+    tac()
+    root.mainloop()

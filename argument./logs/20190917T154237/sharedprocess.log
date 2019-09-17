@@ -1,0 +1,8 @@
+[2019-09-17 15:42:42.719] [sharedprocess] [info] main {"machineId":"b5aeb39b5be821a88e6de0a54110d346e5abd57b33c315199cbe50726d371d78"}
+[2019-09-17 15:42:50.396] [sharedprocess] [info] Installing extension: ms-vsliveshare.vsliveshare
+[2019-09-17 15:43:00.212] [sharedprocess] [info] Downloaded extension: ms-vsliveshare.vsliveshare /tmp/0eb94358-cedc-4679-97c3-127f106b84d8
+[2019-09-17 15:43:01.125] [sharedprocess] [info] Extracted extension to /home/ajitzi/.vscode/extensions/.ms-vsliveshare.vsliveshare-1.0.826: ms-vsliveshare.vsliveshare
+[2019-09-17 15:43:01.126] [sharedprocess] [info] Renamed to /home/ajitzi/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.826
+[2019-09-17 15:43:01.128] [sharedprocess] [info] Installation completed. ms-vsliveshare.vsliveshare
+[2019-09-17 15:43:02.506] [sharedprocess] [info] Extensions installed successfully: ms-vsliveshare.vsliveshare
+[2019-09-17 15:43:22.710] [sharedprocess] [info] Starting to clean up unused language packs.

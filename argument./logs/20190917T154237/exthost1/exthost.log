@@ -1,0 +1,46 @@
+[2019-09-17 15:42:41.482] [exthost] [info] extension host started
+[2019-09-17 15:42:41.516] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:42:41.517] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-09-17 15:42:41.522] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:42:41.522] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-09-17 15:42:41.585] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:42:41.585] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2019-09-17 15:42:41.689] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:42:41.689] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-09-17 15:42:41.694] [exthost] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:42:41.694] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.809/out/prod/extension-prod
+[2019-09-17 15:42:42.449] [exthost] [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:42:42.450] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/vscode-icons-team.vscode-icons-9.3.0/dist/src/vscode-icons.bundle.js
+[2019-09-17 15:42:42.571] [exthost] [info] eager extensions activated
+[2019-09-17 15:42:55.704] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-17 15:42:55.704] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2019-09-17 15:42:55.711] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-17 15:42:55.711] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2019-09-17 15:42:55.787] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-17 15:42:55.787] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2019-09-17 15:43:15.109] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-09-17 15:43:15.109] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/python/dist/pythonMain
+[2019-09-17 15:43:15.110] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-09-17 15:43:15.110] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/ms-python.python-2019.9.34911/out/client/extension
+[2019-09-17 15:43:15.710] [exthost] [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-09-17 15:43:15.710] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.1.9/dist/intellicode
+[2019-09-17 15:43:27.773] [exthost] [info] extension host started
+[2019-09-17 15:43:27.872] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-09-17 15:43:27.872] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/python/dist/pythonMain
+[2019-09-17 15:43:27.875] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-09-17 15:43:27.875] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/ms-python.python-2019.9.34911/out/client/extension
+[2019-09-17 15:43:28.341] [exthost] [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-09-17 15:43:28.341] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.1.9/dist/intellicode
+[2019-09-17 15:43:28.466] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:43:28.466] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-09-17 15:43:28.469] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:43:28.469] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-09-17 15:43:28.510] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:43:28.510] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2019-09-17 15:43:28.578] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:43:28.578] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-09-17 15:43:28.582] [exthost] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:43:28.582] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.826/out/prod/extension-prod
+[2019-09-17 15:43:29.152] [exthost] [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons {"startup":true,"activationEvent":"*"}
+[2019-09-17 15:43:29.152] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ajitzi/.vscode/extensions/vscode-icons-team.vscode-icons-9.3.0/dist/src/vscode-icons.bundle.js
+[2019-09-17 15:43:29.239] [exthost] [info] eager extensions activated

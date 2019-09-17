@@ -1,0 +1,13 @@
+Downloading https://pvsc.azureedge.net/python-language-server-stable/Python-Language-Server-linux-x64.0.3.76.nupkg...
+Language server dowload complete
+Unpacking archive... done
+[Info  - 3:43:53 PM] Microsoft Python Language Server version 0.3.76.0
+[Info  - 3:43:54 PM] Analysis cache path: /home/ajitzi/.cache/Microsoft/Python Language Server
+[Info  - 3:43:54 PM] GetCurrentSearchPaths /usr/bin/python3.7 
+[Info  - 3:43:54 PM] Interpreter search paths:
+[Info  - 3:43:54 PM]     /usr/lib/python3.7
+[Info  - 3:43:54 PM]     /usr/lib/python3.7/lib-dynload
+[Info  - 3:43:54 PM]     /usr/local/lib/python3.7/dist-packages
+[Info  - 3:43:54 PM]     /usr/lib/python3/dist-packages
+[Info  - 3:43:54 PM] User search paths:
+[Info  - 3:43:56 PM] Initializing for /usr/bin/python3.7
